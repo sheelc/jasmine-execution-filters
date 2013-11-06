@@ -1,8 +1,8 @@
 (function() {
   var inFocusedSuite = false,
-  focusedRunnables = [],
-  global = jasmine.getGlobal(),
-  env = jasmine.getEnv();
+      focusedRunnables = [],
+      global = jasmine.getGlobal(),
+      env = jasmine.getEnv();
 
   var focusedSuite = function(description, specDefinitions) {
     if(inFocusedSuite) {
