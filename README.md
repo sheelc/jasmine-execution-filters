@@ -11,13 +11,15 @@ __NOTE: these scripts only work with jasmine 2.0__
 1. Copy the `execution_filters_util.js` and add it to your project (somewhere like `spec/support` is suggested)
 1. Determine which execution filters you want, for example, `focused_specs_filter.js` and copy these as well to the same directory
 1. Include these files after boot.js is included. If you're using jasmine-gem, then including it in the array of boot files should be good
-1. Customize your boot.js:
-Replace `env.execute()` with the folowing:
-    if (jasmine.customExecute) {
-      jasmine.customExecute();
-    } else {
-      env.execute();
-    }
+1. Customize your boot.js. Replace `env.execute()` with the folowing:
+
+```javascript
+if (jasmine.customExecute) {
+  jasmine.customExecute();
+} else {
+  env.execute();
+}
+```
 
 ## Focused Specs ##
 
