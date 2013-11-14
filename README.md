@@ -24,9 +24,9 @@ if (jasmine.customExecute) {
 ## Focused Specs ##
 
 If you install the focus spec filter, you should be able to only run a specific suite with any of the following: 
-`ddescribe`, `fdescribe`, or `describe.only`
+`ddescribe`, `fdescribe`, `odescribe`, or `describe.only`
 
-Focusing a spec similarly uses `iit`, `fit`, or `it.only`. 
+Focusing a spec similarly uses `iit`, `fit`, `oit`, or `it.only`.
 
 Focusing a spec/suite will still work in conjunction with the HTML runner's interface to click a certain spec and see just that spec running. These focused specs are given preference in terms of whittling down which specs to run and then the query parameters used after clicking on a spec further filter down.
 

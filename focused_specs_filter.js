@@ -26,8 +26,8 @@
     return spec;
   };
 
-  describe.only = global.fdescribe = global.ddescribe = focusedSuite;
-  it.only = global.fit = global.iit = focusedSpec;
+  describe.only = global.fdescribe = global.ddescribe = global.odescribe = focusedSuite;
+  it.only = global.fit = global.iit = global.oit = focusedSpec;
 
   jasmine.addExecutionFilter(function(specsToRun) {
     return focusedRunnables.length ? focusedRunnables : specsToRun;
